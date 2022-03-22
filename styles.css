@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    /* background-image: linear-gradient(blue, red, yellow); */
+}
+.wrapper{
+    background-color: #fff;
+    height: fit-content;
+    margin-top: 150px;
+    padding: 15px 0;
+    border:1px solid #0261D1;
+    border-radius: 5px;
+}   
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.form-div{
+    background-color: #0261D1;
+    height: 109%;
+    margin-right: 0;
+    border: none;
+    
+}
+form label{
+   display: flex;
+   color: #fff;
+
+}
+input{
+    width: 250px;
+    height: 30px;
+    margin-bottom: 10px;
+    padding-left: 2px;
+    border-radius: 5px;
+    position: relative;
+}
+form{
+    margin-top: 100px;
+    margin-left: 50px;
+}
+form i{
+    color: #A07575;
+    position: absolute;
+    transform: translateX(-25px);
+    margin-top: 5px;
+}
+button{
+    width: 250px;
+    height: 30px;
+    margin-left: 50px;
+    margin-top: 50px;
+    background-color: #E3E3E3;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #0261D1;
+    color: #fff;
+}
+h4{
+    text-align: center;
+    margin-top: 20px;
+}
+a{
+    text-decoration: none;
+    color: rgb(126, 8, 126);
+}
+
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 550px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-div{
+        padding-bottom: 20px;
+
+    }
+    form{
+       margin-left: 20px;
+       margin-top: 25px;
+    }
+    button{
+       transform: translateX(-25px);
+    }
+
+    .wrapper{
+        margin-bottom: 100px;
+        margin-top: 100px;
+    } 
+}
+
+@media screen and (max-width: 280px) {
+    .wrapper{
+        height: 550px;
+        margin-top: 50px;
+    } 
+    img{
+        width: 250px;
+    }
+    .form-div{
+        width: 250px;
+    }
+    input{
+        width: 200px;
+    }
+    form{
+       margin-left: 20px;
+       margin-top: 25px;
+    }
+    button{
+        width: 200px;
+    }
+    
+
+}
